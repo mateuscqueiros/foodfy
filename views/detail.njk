@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Foodfy</title>
+
+{% endblock head %}
+
+{% block content %}
+
+    <main>
+        
+            <div class="recipe-hero">
+                <div class="recipe-hero-image" style="background: url({{ recipe.image }}) no-repeat center center / cover"></div>
+                <div class="recipe-hero-text">
+                    <h1 class="recipe-hero-title">{{recipe.title}}</h1>
+                    <div class="recipe-hero-author">Por {{recipe.author}}</div>
+                </div>
+            </div>
+
+            <div class="recipe">
+                <div class="recipe-subtitle">
+                    <h2>Ingredientes</h2>
+                    <div class="recipe-sub recipe-show">Esconder</div>
+                    <div class="recipe-sub recipe-hidden">Mostrar</div>
+                </div>
+                
+                <ul>
+                    {% for item in recipe.ingredients %}
+                    
+                        <li class="ingredient-item">{{item}}</li>
+
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="recipe">
+                <div class="recipe-subtitle">
+                    <h2>Modo de Preparo</h2>
+                    <div class="recipe-sub recipe-show">Esconder</div>
+                    <div class="recipe-sub recipe-hidden">Mostrar</div>
+                </div>
+                <div class="recipe-sub-hidden">
+                    {% for item in recipe.preparation %}
+
+                        <p>{{item}}</p>
+
+                {% endfor %}
+                </div>
+            </div>
+
+            <div class="recipe">
+                <div class="recipe-subtitle">
+                    <h2>Informações</h2>
+                    <div class="recipe-sub recipe-show">Esconder</div>
+                    <div class="recipe-sub recipe-hidden">Mostrar</div>
+                </div>
+
+                <p class="recipe-sub-hidden">{{recipe.information}}</p>
+                
+            </div>
+
+    </main>
+
+    <script src="/scripts.js"></script>
+
+{% endblock content %}

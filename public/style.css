@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 0 230px;
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    height:92px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+header .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .header-wrapper a {
+    width: 213px;
+    height: 50px;
+}
+
+header .header-wrapper .logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    height: 100%;
+    background-image: url("/assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 0px center;
+}
+
+header .header-wrapper .menu {
+    display: flex;
+    height: 100%;
+    width: 134px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu .menu-item {
+    height: 19px;
+    font-size: 16px;
+}
+
+main .hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    padding: 60px 60px 0 60px;
+}
+
+main .hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 30px;
+}
+
+main .hero-text h1 {
+    margin-bottom: 20px;
+}
+
+main h1 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+main .hero-text-content {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+main .hero-image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+main .featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+main .featured h2 {
+    margin-bottom: 20px;
+}
+
+main .food-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main .food-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+main .food-image {
+    width: 100%;
+    height: 115px;
+    border-radius: 15px;
+}
+
+main h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+main .food-description {
+    font-size: 14px;
+    color: #777777;
+}
+
+main#about h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main#about h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+main#about p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 62px;
+    margin-top: 50px;
+}
+
+footer .rights {
+    color: #999999;
+    font-size: 14px;
+}
+
+/* ======== details ========== */
+
+.recipe-hero {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.recipe-hero-image {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.recipe-hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-hero-title {
+    margin-bottom: 5px;
+}
+
+.recipe-hero-author {
+    color: #777777;
+}
+
+.recipe {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.recipe-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.recipe-subtitle > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999999;
+    cursor: pointer;
+}
+
+.recipe h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.recipe ul {
+    padding-left: 20px;
+}
+
+.recipe ul .ingredient-item {
+    color: #444444;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 26px;
+}
+
+.recipe p {
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+div.recipe-show {
+    display: flex;
+}
+
+div.recipe-hidden {
+    display: none;
+}
