@@ -8,7 +8,7 @@ Tem como objetivo treinar fundamentos básicos de html, css, js, node, express, 
 
 ## 📂 Estrutura
 
-Como o site usa firebase, as pastas foram organizadas para que as ferramentas dessa área funcionem corretamente. A estrutura é a seguinte: Arquivos njk na pasta views, imagens na pasta assets e estilos e scripts na pasta public .
+Como o site usa firebase, as pastas foram organizadas para que as ferramentas dessa área funcionem corretamente. A estrutura é a seguinte: Arquivos njk na pasta views, imagens na pasta assets e estilos e scripts na pasta public.
 
 ## 🔨 Ferramentas
 
