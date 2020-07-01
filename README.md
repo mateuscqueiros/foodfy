@@ -1,9 +1,3 @@
-#Foodfy
-
-Esse projeto foi desenvolvido por Mateus Queirós durante o curso Launchbase da Rocketseat. 
-
-##Sobre
-
 # 🚀 LaunchBase: Foodfy
 
 Esse projeto foi desenvolvido por **Mateus Queirós** durante o curso Launchabase da Rocketseat.
