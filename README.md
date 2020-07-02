@@ -1,4 +1,4 @@
-# 🚀 LaunchBase: Foodfy
+# 🚀 LaunchBase: Foodfi
 
 Esse projeto foi desenvolvido por **Mateus Queirós** durante o curso Launchabase da Rocketseat.
 
