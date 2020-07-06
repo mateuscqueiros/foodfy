@@ -1,3 +1,26 @@
+
+<h1 align="center">
+    <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="400px" />
+</h1>
+
+<h3 align="center">
+  Foodfy
+</h3>
+
+<blockquote align="center">Desafio do LaunchBase</blockquote>
+
+<p align="center">
+
+  <a href="https://rocketseat.com.br">
+    <img alt="Made by Mateus Queirós" src="https://img.shields.io/badge/made%20by-Mateus%20Queirós-%23F8952D">
+  </a>
+
+  <a href="LICENSE" >
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
+  </a>
+
+</p>
+
 ## 🚀 LaunchBase: Foodfy
 
 Esse projeto foi desenvolvido por **Mateus Queirós** durante o curso Launchabase da Rocketseat.
