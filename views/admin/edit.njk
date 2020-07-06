@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <form class="card" method="POST" action="/receitas?_method=PUT">
+        <section class="avatar" style="background: url(https://source.unsplash.com/collection/201009/500x500) no-repeat center center / cover"></section>
+        <section class="details">
+
+            <div class="fields-wrapper">
+                
+                <h3>Editar receita</h3>
+
+                {% include 'admin/fields.njk' %}
+
+            </div>
+
+            <input type="hidden" name="id" value="{{receitas.id}}">
+
+        </section>
+    </form>
+
+{% endblock content %}
