@@ -35,14 +35,36 @@ header {
 
 header .header-wrapper {
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 header .header-wrapper a {
     width: 213px;
+    height: 100%;
+}
+
+header .header-wrapper .admin-wrapper {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+    justify-content: center;
     height: 50px;
+    width: 200px;
+    background-color: #fbdfdb;
+    border-radius: 30px;
+    box-shadow: 6px 6px 0px 0px #00000050;
+}
+
+header .main-nav {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    flex-direction: row;
 }
 
 header .header-wrapper .logo {
@@ -52,12 +74,12 @@ header .header-wrapper .logo {
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: 0px center;
+    background-size: 120px;
 }
 
 header .header-wrapper .menu {
     display: flex;
     height: 100%;
-    width: 134px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +87,16 @@ header .header-wrapper .menu {
 
 header .menu .menu-item {
     height: 19px;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+header .menu .menu-item:first-child {
+    margin-right: 30px;
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
 }
 
 main .hero {
@@ -75,6 +106,8 @@ main .hero {
     background-color: #FBDFDB;
     border-radius: 30px;
     padding: 60px 60px 0 60px;
+    box-shadow: 14px 13px 0px 0px #00000050;
+    margin-bottom: 100px;
 }
 
 main .hero-text {
@@ -89,12 +122,12 @@ main .hero-text h1 {
 }
 
 main h1 {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 38px;
 }
 
 main .hero-text-content {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 28px;
 }
 
@@ -135,13 +168,13 @@ main .food-image {
 }
 
 main h3 {
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
 main .food-description {
-    font-size: 14px;
+    font-size: 20px;
     color: #777777;
 }
 
@@ -264,4 +297,80 @@ div.recipe-show {
 
 div.recipe-hidden {
     display: none;
+}
+
+/* ======== inputs ========= */
+
+form {
+    width: 500px;
+    margin: 50px auto 0;
+}
+
+form h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fields-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    background-color: #fbdfdb;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px 0px #00000073;
+}
+
+.item {
+    width: 300px;
+    margin: 20px auto 0;
+}
+
+.item div:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.item input,
+.item textarea {
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+.item input {
+    width: 100%;
+}
+
+.item textarea {
+    width: 100%;
+}
+
+form button {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background: none;
+    font-size: 1.5em;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.item input:focus,
+.item textarea:focus {
+    border-bottom: 2px solid gray;
 }
