@@ -6,13 +6,11 @@
 
 <p align="center">
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Mateus Queirós" src="https://img.shields.io/badge/made%20by-Mateus%20Queirós-%23F8952D">
-  </a>
+<img alt="Made by Mateus Queirós" src="https://img.shields.io/badge/made%20by-Mateus%20Queirós-%23F8952D">
 
-  <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
-  </a>
+<a href="LICENSE" >
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
+</a>
 
 </p>
 
