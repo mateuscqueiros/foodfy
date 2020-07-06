@@ -3,9 +3,9 @@
     <img alt="Launchbase" src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png" width="400px" />
 </h1>
 
-<h3 align="center">
+<h2 align="center">
   Foodfy
-</h3>
+</h2>
 
 <blockquote align="center">Desafio do LaunchBase</blockquote>
 
