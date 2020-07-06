@@ -39,3 +39,7 @@ As pastas foram organizadas para que as ferramentas do backend funcionem correta
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/mateuscqueiros/foodfy/blob/master/LICENSE) para mais detalhes.
+
+---
+
+Feito com 💜 por Mateus Queirós 👋
