@@ -1,16 +1,16 @@
-# 🚀 LaunchBase: Foodfy
+## 🚀 LaunchBase: Foodfy
 
 Esse projeto foi desenvolvido por **Mateus Queirós** durante o curso Launchabase da Rocketseat.
 
-# 💡 Sobre
+## 💡 Sobre
 
 Tem como objetivo treinar fundamentos básicos de html, css, js, node, express, nunjucks e outras tecnologias adicionadas ao longo do desenvolvimento do site.
 
-# 📂 Estrutura
+## 📂 Estrutura
 
 As pastas foram organizadas para que as ferramentas do backend funcionem corretamente. A estrutura é a seguinte: Arquivos njk na pasta views, imagens na pasta assets e estilos e scripts na pasta public.
 
-# 🔨 Ferramentas
+## 🔨 Ferramentas
 
 - _HTML_
 - _CSS_
@@ -18,6 +18,6 @@ As pastas foram organizadas para que as ferramentas do backend funcionem correta
 - _Express_
 - _Nunjucks_
 
-# 📝 Licença
+## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/mateuscqueiros/foodfy/blob/master/LICENSE) para mais detalhes.
