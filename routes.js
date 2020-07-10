@@ -30,6 +30,8 @@ routes.get("/admin/receitas/list/:index", recipes.show)
 
 routes.get("/admin/receitas/create", recipes.create)
 
+routes.get("/admin/receitas/:id/edit", recipes.edit)
+
 //POST
 
 routes.post("/admin/receitas", recipes.post)
@@ -37,9 +39,10 @@ routes.post("/admin/receitas", recipes.post)
 
 //PUT
 
+routes.put("/admin/receitas/", recipes.put)
 
 //EDIT
 
-routes.get("/admin/receitas/:id/edit", recipes.edit)
+
 
 module.exports = routes

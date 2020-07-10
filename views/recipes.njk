@@ -24,6 +24,18 @@
 
                 {% endfor %}
 
+                {% for item in recipe %}
+
+                    <a href="/receitas/{{item.id}}">
+                        <div class="food-item">
+                            <img src="{{item.image}}" alt="{{item.title}}" class="food-image">
+                            <h3>{{item.title}}</h3>
+                            <div class="food-description">por {{item.author}}</div>
+                        </div>
+                    </a>
+
+                {% endfor %}
+
                 
                 
             </div>

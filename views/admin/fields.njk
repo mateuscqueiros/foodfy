@@ -1,7 +1,7 @@
 <div class="item">
     <div>URL da imagem</div>
     <div>
-        <input value="{{ recipe.image }}" type="url" name="recipe-image" placeholder="">
+        <input value="{{ recipe.image }}" type="url" name="image" placeholder="">
     </div>
 </div>
 
@@ -21,15 +21,28 @@
 
 <div class="item">
     <div>Ingredientes</div>
-    <div>
-        <textarea value="{{recipe.ingredients}}" type="text" name="ingredients" placeholder=""></textarea>
+    <div class="inputs" >
+        <div class="input-wrapper">
+            <input type="text" name="ingredients[]" value="{{recipe.ingredients}}" placeholder="" />
+        </div>
     </div>
+</div>
+
+<div class="add-input-wrapper">
+    <button type="button" class="add-input">Adicionar</button>
 </div>
 
 <div class="item">
     <div>Preparação</div>
     <div>
-        <textarea value="{{recipe.preparation}}" type="text" name="preparation" placeholder=""></textarea>
+        <input value="{{recipe.preparation}}" type="text" name="preparation" placeholder="">
+    </div>
+</div>
+
+<div class="item">
+    <div>Informação</div>
+    <div>
+        <input value="{{recipe.information}}" type="text" name="preparation" placeholder="">
     </div>
 </div>
 

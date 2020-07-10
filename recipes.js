@@ -28,7 +28,7 @@ exports.post = function(req, res) {
     //     }
     // }
 
-    let { image, title, author, services, preparation } = req.body
+    let { image, title, author, ingredients, preparation, information } = req.body
 
     const created_at = Date.now()
     const id = Number(data.recipes.length + 1)
@@ -38,8 +38,9 @@ exports.post = function(req, res) {
         title,
         author,
         id,
-        services,
+        ingredients,
         preparation,
+        information,
         created_at
     })
 
@@ -57,8 +58,37 @@ exports.edit = function(req, res) {
         return instructor.id == id
     })
 
-    if (!recipe) return res.send("Instructor not found")
+    if (!recipe) return res.send("Receita não encontrada")
 
     return res.render('admin/edit', { recipe })
+    
+}
+
+exports.put = function(req, res) {
+    const { id } = req.body
+    let index = 0
+
+    const foundRecipe = data.recipes.find(function(recipe, foundIndex) {
+
+        if (id == recipe.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if (!foundRecipe) return res.send("Receita não encontrada")
+
+    const recipe = {
+        ...foundRecipe,
+        ...req.body
+    }
+
+    data.recipes[index] = recipe
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if(err) return res.send("Write error!")
+
+        return res.redirect(`/admin/receitas/list/${id}`)
+    })
     
 }

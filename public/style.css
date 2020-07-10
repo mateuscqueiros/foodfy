@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -41,13 +42,14 @@ header .header-wrapper {
     justify-content: space-between;
 }
 
-header .header-wrapper a {
+header .header-wrapper a {         
     width: 213px;
     height: 100%;
 }
 
 header .header-wrapper .admin-wrapper {
     font-weight: bold;
+    border: 1px solid black;
     color: black;
     display: flex;
     font-size: 21px;
@@ -57,7 +59,17 @@ header .header-wrapper .admin-wrapper {
     width: 200px;
     background-color: #fbdfdb;
     border-radius: 30px;
-    box-shadow: 6px 6px 0px 0px #00000050;
+    box-shadow: 6px 6px 0px 0px #8c8c8c;
+    transition: all .05s ease-in-out;
+}
+
+header .header-wrapper .admin-wrapper:hover {
+    background-color: #ffeeec;
+}
+
+header .header-wrapper .admin-wrapper:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
 }
 
 header .main-nav {
@@ -101,12 +113,13 @@ main {
 
 main .hero {
     display: flex;
+    border: 1px solid black;
     flex-direction: row;
     width: 100%;
     background-color: #FBDFDB;
     border-radius: 30px;
     padding: 60px 60px 0 60px;
-    box-shadow: 14px 13px 0px 0px #00000050;
+    box-shadow: 19px 19px 0px 0px #00000050;
     margin-bottom: 100px;
 }
 
@@ -308,38 +321,42 @@ form {
 
 form h3 {
     font-size: 1.7em;
-    margin-bottom: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
 }
 
 .fields-wrapper {
+    border: 1px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 100%;
     background-color: #fbdfdb;
-    padding: 40px;
+    padding: 30px 98px 30px;
     border-radius: 20px;
     box-shadow: 20px 20px 0px 0px #00000073;
 }
 
-.item {
-    width: 300px;
-    margin: 20px auto 0;
+.fields-wrapper .item:first-of-type {
+    margin-top: 30px;
 }
 
-.item div:first-child {
+.item {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.item > div {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 5px;
 }
 
-.item input,
-.item textarea {
-    font-size: 1.2em;
+.item div input {
+    font-size: 1.3em;
     padding: 10px;
     border-bottom: 2px solid black;
     outline: none;
@@ -348,10 +365,7 @@ form h3 {
 }
 
 .item input {
-    width: 100%;
-}
-
-.item textarea {
+    font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
 }
 
@@ -368,9 +382,44 @@ form button {
     margin-top: 30px;
     outline: none;
     cursor: pointer;
+    box-shadow: 5px 5px 0px 0px #8c8c8c;
+    transition: all .05s ease-in-out;
+    border: 1px solid black;
 }
 
-.item input:focus,
-.item textarea:focus {
-    border-bottom: 2px solid gray;
+form button:hover {
+    background-color: #fbf6f6;
+}
+
+form button:active {
+    transform: translate(1px, 1px);
+    background-color: #fbf6f6;
+    box-shadow: none;
+}
+.add-input-wrapper {
+    width: 100%;
+}
+
+.add-input {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 110px;
+    height: 36px;
+    background: none;
+    font-size: 1em;
+    border-radius: 50px;
+    background-color: white;
+    margin: 0 0 30px 0;
+    outline: none;
+    cursor: pointer;
+    transition: all .05s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px 0px #8c8c8c;
+}
+
+.add-input:active {
+    transform: translate(1px, 1px);
+    background-color: #fbf6f6;
+    box-shadow: none;
 }
